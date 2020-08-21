@@ -1,0 +1,291 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "patternProperties": {
+        "^": {
+            "required": [
+                "type"
+            ],
+            "properties": {
+                "type": {
+                    "description": "Check for the parameter value type to be the one defined",
+                    "examples": [
+                        "AnsibleUnsafeText",
+                        "int",
+                        "bool",
+                        "dict",
+                        "list"
+                    ]
+                },
+                "mandatory": {
+                    "description": "Must be sent by the user or the environment, not set after the prevalidation or by the default property.",
+                    "examples": [
+                        true,
+                        false
+                    ]
+                },
+                "default": {
+                    "description": "Set a default value for the parameter when not sent by the user"
+                },
+                "required": {
+                    "description": "Check for the variables in the requires array to be defined or have a default. This allow to make parameters mandatory in group (when the parameter is set, the requires parameters must also be set)"
+                },
+                "allowed": {
+                    "description": "Will validate for the parameter value to be one of the list in allowed"
+                },
+                "subitems{}": {
+                    "description": "TODO define structure check for dict type parameters"
+                }
+            }
+        }
+    },
+    "properties": {
+        "var_location": {
+            "type": "object",
+            "title": "var_location variable",
+            "examples": [
+                {
+                    "type": "AnsibleUnsafeText",
+                    "mandatory": true
+                }
+            ],
+            "required": [
+                "type"
+            ],
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "Check for the parameter value type to be the one defined",
+                    "examples": [
+                        "AnsibleUnsafeText"
+                    ]
+                },
+                "mandatory": {
+                    "type": "boolean",
+                    "description": "Must be sent by the user or the environment, not set after the prevalidation or by the default property.",
+                    "default": false,
+                    "examples": [
+                        true,
+                        false
+                    ]
+                }
+            }
+        },
+        "var_owner": {
+            "type": "object",
+            "title": "var_owner variable",
+            "examples": [
+                {
+                    "type": "AnsibleUnsafeText",
+                    "mandatory": true
+                }
+            ],
+            "required": [
+                "type"
+            ],
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "Check for the parameter value type to be the one defined",
+                    "examples": [
+                        "AnsibleUnsafeText"
+                    ]
+                },
+                "mandatory": {
+                    "type": "boolean",
+                    "description": "Must be sent by the user or the environment, not set after the prevalidation or by the default property.",
+                    "default": false,
+                    "examples": [
+                        true,
+                        false
+                    ]
+                }
+            }
+        },
+        "var_resourceGroupName": {
+            "type": "object",
+            "title": "var_resourceGroupName variable",
+            "examples": [
+                {
+                    "type": "AnsibleUnsafeText",
+                    "mandatory": true
+                }
+            ],
+            "required": [
+                "type"
+            ],
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "Check for the parameter value type to be the one defined",
+                    "examples": [
+                        "AnsibleUnsafeText"
+                    ]
+                },
+                "mandatory": {
+                    "type": "boolean",
+                    "description": "Must be sent by the user or the environment, not set after the prevalidation or by the default property.",
+                    "default": false,
+                    "examples": [
+                        true,
+                        false
+                    ]
+                }
+            }
+        },
+        "var_deploymentId": {
+            "type": "object",
+            "title": "var_deploymentId variable",
+            "examples": [
+                {
+                    "type": "AnsibleUnsafeText",
+                    "mandatory": true
+                }
+            ],
+            "required": [
+                "type"
+            ],
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "Check for the parameter value type to be the one defined",
+                    "examples": [
+                        "AnsibleUnsafeText"
+                    ]
+                },
+                "mandatory": {
+                    "type": "boolean",
+                    "description": "Must be sent by the user or the environment, not set after the prevalidation or by the default property.",
+                    "default": false,
+                    "examples": [
+                        true,
+                        false
+                    ]
+                }
+            }
+        },
+        "var_chargeCode": {
+            "type": "object",
+            "title": "var_chargeCode variable",
+            "examples": [
+                {
+                    "type": "AnsibleUnsafeText",
+                    "mandatory": true
+                }
+            ],
+            "required": [
+                "type"
+            ],
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "Check for the parameter value type to be the one defined",
+                    "examples": [
+                        "AnsibleUnsafeText"
+                    ]
+                },
+                "mandatory": {
+                    "type": "boolean",
+                    "description": "Must be sent by the user or the environment, not set after the prevalidation or by the default property.",
+                    "default": false,
+                    "examples": [
+                        true,
+                        false
+                    ]
+                }
+            }
+        },
+        "AZURE_RM_SECRET": {
+            "type": "object",
+            "title": "AZURE_RM_SECRET variable",
+            "examples": [
+                {
+                    "type": "AnsibleUnsafeText",
+                    "mandatory": true
+                }
+            ],
+            "required": [
+                "type"
+            ],
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "Check for the parameter value type to be the one defined",
+                    "examples": [
+                        "AnsibleUnsafeText"
+                    ]
+                },
+                "mandatory": {
+                    "type": "boolean",
+                    "description": "Must be sent by the user or the environment, not set after the prevalidation or by the default property.",
+                    "default": false,
+                    "examples": [
+                        true,
+                        false
+                    ]
+                }
+            }
+        },
+        "AZURE_RM_TENANTID": {
+            "type": "object",
+            "title": "AZURE_RM_TENANTID variable",
+            "examples": [
+                {
+                    "type": "AnsibleUnsafeText",
+                    "mandatory": true
+                }
+            ],
+            "required": [
+                "type"
+            ],
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "Check for the parameter value type to be the one defined",
+                    "examples": [
+                        "AnsibleUnsafeText"
+                    ]
+                },
+                "mandatory": {
+                    "type": "boolean",
+                    "description": "Must be sent by the user or the environment, not set after the prevalidation or by the default property.",
+                    "default": false,
+                    "examples": [
+                        true,
+                        false
+                    ]
+                }
+            }
+        },
+        "AZURE_RM_CLIENTID": {
+            "type": "object",
+            "title": "AZURE_RM_CLIENTID variable",
+            "examples": [
+                {
+                    "type": "AnsibleUnsafeText",
+                    "mandatory": true
+                }
+            ],
+            "required": [
+                "type"
+            ],
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "Check for the parameter value type to be the one defined",
+                    "examples": [
+                        "AnsibleUnsafeText"
+                    ]
+                },
+                "mandatory": {
+                    "type": "boolean",
+                    "description": "Must be sent by the user or the environment, not set after the prevalidation or by the default property.",
+                    "default": false,
+                    "examples": [
+                        true,
+                        false
+                    ]
+                }
+            }
+        }
+    }
+}
