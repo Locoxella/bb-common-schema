@@ -1,6 +1,6 @@
 # Schema for parameters files
 
-__TOC__
+[[_TOC_]]
 
 ## Introduction
 
