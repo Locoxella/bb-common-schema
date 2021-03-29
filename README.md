@@ -1,6 +1,7 @@
 # Schema for parameters files
 
-[[_TOC_]]
+- [Changelog](#changelog)
+  - [Introduction](#introduction)
 
 ## Introduction
 
